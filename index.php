@@ -75,11 +75,11 @@
         
             $loop = new WP_Query( $args ); 
             echo '<h3>Recent Movies</h3>';
+            echo '<ul>';
             while ( $loop->have_posts() ) : $loop->the_post();
-                echo '<ul>';
                 echo '<li><a href="'.get_permalink( $id ).'">'.get_the_title( $id ).'</a></li>';
-                echo '</ul>';
             endwhile;
+            echo '</ul>';
         
             wp_reset_postdata(); 
             ?>
