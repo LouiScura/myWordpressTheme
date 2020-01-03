@@ -1,2 +1,8 @@
-wp_deregister_script('jquery');
-wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '3.2.1');
+$(document).ready(function(){
+    $list = $('.movieList');
+    $movie = $('movieToList');
+    
+    if($movie){
+        $list.push($movie);
+    };
+});

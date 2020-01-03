@@ -6,7 +6,7 @@ img{
     margin-bottom: 5px;
 }
 body{
-    background-image: url("../background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: round;
 
 }
@@ -72,6 +72,9 @@ header{
 }
 .navbar{
     background: #f2f2f2;
+}
+.container .menu .navbar-luis-custom    {
+    border-radius: 8px;
 }
 /*ARITUCLOS/POSTS]*/
 .articulos .info{
@@ -140,56 +143,103 @@ header{
     margin-bottom: 20px;
     padding-left: 30px;
 }
-.sidebar h3{
+.sidebar .customSidebar{
+    border: 2px dashed rebeccapurple;
+    padding: 20px;
+    text-align: center;
+    background: floralwhite;
+    border-radius: 20px
+}
+.sidebar #luis_scura-3{
+    margin-bottom: 30px;
+    color: blue;
+    font-weight: bold;
+}
+.sidebar #luis_scura-3 h3{
     color: #000;
     font-family: cursive;
     padding-bottom: 8px;
-    font-size: 25px;
+    font-size: 24px;
 }
-.sidebar .redes{
-    padding: 20px;
-    font-size: 60px;
-    letter-spacing: 12px;
-    
+.sidebar #luis_scura-3 p{
+    cursor: pointer;
 }
-.screen-reader-text{
-    display: none;
+.sidebar h3{
+    color: #000;
+    font-family: cursive;
+    font-size: 27px;
+    margin-top: 10px;
 }
-.sidebar .others-widget{
-    margin-top: 20px;
-}
-.sidebar .others-widget ul{
+.sidebar .luis{
     list-style: none;
 }
-
-/* SUSCRIBITE */
-.suscribite{
-    background: #0D298A;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-.suscribite form{
-    font-family: cursive;
-    font-size: 20px;
-    font-weight: bold;
-}
-.suscribite form p{
-   text-transform: uppercase;
-}
-.suscribite form input[type="text"]{
-    border-radius: 3px;
-    border: none;
-    margin-bottom: 10px;
-}
-.suscribite form input[type="submit"]{
-    padding: 8px;
-    background: red;
-    border: none;
+.sidebar #search-3{
+    padding: 10p;
     border-radius: 10px;
-    font-size: 20px;
+    margin: 20p;
+    text-align: center;
+    padding: 2;
+}
+.sidebar #search-3 input[type="text"]{
+    border:  1px solid;
+}
+.sidebar #search-3 input[type="submit"]{
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    background: red;
     color: white;
+    border-radius: 3px;
+}
+.sidebar #movieList{
+    list-style: none;
+}
+/* ABOUT US */
+.about-us-background{
+    margin-top: 25%;
+    margin-bottom: 26%;
+    border-radius: 50%;
+}
+.singlePosts .contenedor .info .titleAbout{
+    color: #ffff;
+    font-size: 40px;
+
+}
+.singlePosts .contenedor .info .modal-header h4{
+    color: #000;
+}
+.singlePosts .contenedor .info .texto{
+    color: #000;
+}
+/* CONTACT PAGE */
+.contenedor .info .contact-us .contactForm{
+    color: #Fff;
+}
+.contenedor .info .contact-us .contactForm input,
+textarea{
+    width: 350px;
+    border-radius: 7px;
+    border-style: none;
+    border-color: red;
+}
+.contenedor .info .contact-us .contactForm textarea{
+    min-width: 350px;
+    max-width: 350px;
+    height: 77px;
+    min-height: 77px;
+    max-height: 130px;
+    border-radius: 7px;
+    border-style: none;
+    border-color: red;
+}
+.contenedor .info .contact-us input[type="submit"]{
+    width: 200px;
+    border-radius: 7px;
+    border-style: none;
+    background: red;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
 }
 /* SINGLE-MOVIE PAGE */
 h1,
@@ -295,7 +345,6 @@ footer li a:hover{
 }
 .footer-menu .container .parrafoFooter p{
     font-family: 'Josefin Sans', sans-serif;
-    margin-right: 200px;
 }
 
 /* MEDIAS QUERIES */
@@ -434,18 +483,6 @@ footer li a:hover{
     }
     .sidebar h3{
         text-align: center;
-    }
-    .sidebar .redes{
-        padding: 0px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .sidebar .redes a{
-        font-size: 50px;
-        text-align: center;
-    }
-    .sidebar .suscribite{
-        padding: 25px;
     }
     .paginacion{
         margin-bottom: 0px;

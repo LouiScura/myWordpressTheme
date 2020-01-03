@@ -1,26 +1,27 @@
-<?php get_header(); ?>
+
+<?php 
+/* Template Name: contact-us */ 
+    get_header(); 
+?>
+
 <div class="container mt-3">
     <div class="row">
         <section class="main col-12 col-sm-12 col-md-12"> 
             <div class="row singlePosts">
                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                <article class="col-12 col-sm-8 articulos">
+                <article class="col-12 col-sm-12 articulos">
                     <div class="contenedor">
                         <div class="imagen">
-                                <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'homepage-thumb' ); } ?>
+                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'homepage-thumb' ); } ?>
                         </div>
-                        <div class="info">
-                            <h2 class="titulo"><?php the_title();?></h2>
-                            <p class="fecha"><?php echo get_the_date();?></p>
-                            <div class="texto"><?php the_content(); ?></div>
-                            <!-- <p class="extracto"><?php the_content(); ?></p> -->
+                        <div class="col-sm-12 info">
+                            <div class="texto contact-us">
+                                <h3 class="titlteContact">Are you interesting? Contact us!</h3>
+                               <?php the_content(); ?>
+                            </div>
                         </div>
                     </div>
                 </article>
-
-                <section class="comentarios col-sm-8">
-                    <?php comments_template();?>
-                </section>
 
                 <?php endwhile; else : ?>
                 <article class="col-12 col-sm-12 articulos">

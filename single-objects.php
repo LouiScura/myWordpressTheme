@@ -113,7 +113,7 @@ if(get_field('movie_plot')){
                                 <img src="<?php the_field('movie_picture');?>"/>
                             <?php endif; ?>
                     </div>
-                    <h2>Movie info</h2>
+                    <h2>Object info</h2>
                     <div class="movieinfo">
                         <!--<p><strong>Release Date:</strong><?php //echo $releaseDate->format('j F Y');?>(<?php echo $country;?>)</p>-->
                         <p class="genre2"><strong>Genres:</strong>
@@ -131,11 +131,11 @@ if(get_field('movie_plot')){
                 </div>
                 <div class="col column4 clearfix" data-aos="zoom-out-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
                     <div class="plot">
-                        <h2>Movie Storyline</h2>
+                        <h2>Object Storyline</h2>
                         <p><?php echo $movie_plot;?></p>
                     </div>
                     <div class="trailer" data-aos="zoom-out-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
-                        <h2>Movie trailer</h2>
+                        <h2>Object trailer</h2>
                         <div class="video-frames">
                         <?php 
                             $link = get_field('movie_trailer');
@@ -144,7 +144,7 @@ if(get_field('movie_plot')){
                         </div>
                     </div>
                     <div class="cast" data-aos="zoom-out-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
-                        <h2>Movie cast</h2>
+                        <h2>Object cast</h2>
                         <div class="image-cast">
                             <?php if(get_field('cast_image') ):?>
                                 <img src="<?php the_field('cast_image');?>"/>
@@ -160,7 +160,5 @@ if(get_field('movie_plot')){
         </div>
     <?php endwhile; ?>
 </div>
-
-
 
 <?php get_footer();?>
